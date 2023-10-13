@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+
+<body>
+    <!-- <div id="wrapper">
+    <input type="text" placeholder="Enter a vail email">
+    <button>Get Domain</button>
+    <p></p>
+   </div> 
+
+
+
+
+   
+    const input = document.querySelector("input")
+    const button = document.querySelector("button")
+    const para = document.querySelector("p")
+
+    button.onclick =() =>{
+        const atPosition = input.value.lastIndexOf("@")
+        const doPosition = input.value.lastIndexOf(".")
+        para.innerHTML= input.value.slice(atPosition+1,doPosition);
+    }; -->
+
+    <div id="wrapper">
+        <input type="text" placeholder="Enter a number">
+        <button id="add">Add to array</button>
+        <select name="" id="">
+            <option value="" selected disabled> select option</option>
+            <option value="asc">Asc</option>
+            <option value="desc">desc</option>
+        </select>
+        <button id="show">show</button>
+        <p></p>
+    </div>
+    <script>
+        const input = document.querySelector("input");
+        const add = document.querySelector("add");
+        const Show = document.querySelector("show");
+        const select = document.querySelector("select");
+        const para = document.querySelector("p");
+        const number = [];
+
+        add.onclick = () => {
+            numbers.push(Number(input.value));
+            console.log(numbers);
+        };
+
+        show.onclick = () => {
+            if (select.value = "asc") {
+                for (let i = 0; i < numbers.length; i++) {
+                    for (let j = i + 1; j < numbers.length; j++) {
+                        if (numbers[i] > numbers[j]) {
+                            let temp = numbers[j]
+                            number[i] = numbers[j]
+                            numbers[j] = temp
+                        }
+                    }
+                }
+            } else{
+                for ( let i=0; i<numbers.length;i++){
+                    for(let j=i+1; j<numbers.length;j++){
+                        if (numbers[i] < numbers[j]) {
+                            let temp = numbers[j]
+                            number[i] = numbers[j]
+                            numbers[j] = temp
+                        }
+                    }
+                }
+            }
+            para.innerHTML=numbers;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

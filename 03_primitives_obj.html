@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Primitives & objects</h1>
+<!-- Primitives
+    N = null
+    N = number
+    S =symbol
+    S =string
+    B =boolean
+    B =bigint
+    U =undefined -->
+
+<!-- objects
+key value pairs
+let person ={
+  key    name:'john'        value
+         age:'20'
+}; -->
+
+
+
+    <script>
+
+// nn bb ss u primitves in js
+
+let a=null;
+let b=33;
+let c=true;  //can also be false 
+let d=BigInt("366")+BigInt("643");
+let e="harry";
+let f=Symbol("i am a nice symbol");
+let g=undefined;
+
+console.log(a,b,c,d,e,f,g)
+console.log(typeof f)
+
+// non primitives data base = objects in js
+
+const item = {
+    "harry" : true,
+    "lal" : 76,
+    "lovish" : false,
+}
+console.log(item["lala"])
+
+
+    </script>
+</body>
+</html>
