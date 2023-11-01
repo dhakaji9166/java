@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+    <link rel="stylesheet" href="dom_style.css">
+</head>
+<body>
+    <div id="test">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sunt nam sapiente eveniet quaerat culpa vero perspiciatis? Laboriosam, qui labore! In temporibus mollitia illum eaque dignissimos excepturi repellendus placeat fugit.</p>
+        <button>submit</button>
+    </div>
+    <div id="test">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sunt nam sapiente eveniet quaerat culpa vero perspiciatis? Laboriosam, qui labore! In temporibus mollitia illum eaque dignissimos excepturi repellendus placeat fugit.</p>
+        <button>submit</button>
+    </div>
+    <div id="test">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores sunt nam sapiente eveniet quaerat culpa vero perspiciatis? Laboriosam, qui labore! In temporibus mollitia illum eaque dignissimos excepturi repellendus placeat fugit.</p>
+        <button>submit</button>
+    </div>
+
+    <script>
+        // var a=document.getElementById("test");
+        // a.style="background:blue"
+        // a.style="display:none"
+
+var a=document.querySelectorAll("#test h1")
+for (s = 0; s < a.length; s++) {
+            a[s].style="background:white ";
+        }
+    </script>
+</body>
+</html>

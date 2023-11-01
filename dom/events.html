@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events onclick</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+
+<body>
+    <div class="test" onclick="change()">
+    <h1>this is heading</h1></div> 
+
+     <div class="box">
+        <p id="remove">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nobis, aliquam iusto pariatur earum illo
+            voluptas nam. Illum in molestiae ipsam rerum voluptates et dicta, placeat ullam molestias magnam laboriosam.
+        </p>
+
+        <button onclick="
+    remove ();
+   ">Change</button>
+        <button onclick="
+        reset();">reset</button>
+
+    </div>
+<!-- 
+   <h1 onclick="change()">ClICK ME</h1>  -->
+
+
+    <script>
+
+
+
+
+
+        function remove() {
+            var a = document.querySelector("#remove");
+            a.innerHTML = " ";
+        }
+
+        function reset() {
+            var a = document.querySelector("#remove");
+            a.innerHTML =` " <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nobis, aliquam iusto pariatur earum illo
+            voluptas nam. Illum in molestiae ipsam rerum voluptates et dicta, placeat ullam molestias magnam laboriosam.
+        </p> "`;
+        } 
+
+
+    //     function change()
+    //    {
+    //         var a=document.querySelector("h1");
+
+    //         a.innerHTML=Date();
+            
+    //    }
+
+    </script>
+</body>
+
+</html>
